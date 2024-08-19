@@ -4,7 +4,7 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchNewsFromApi1, fetchNewsFromApi2,  } from './store/newsSlice';
 import { RootState, AppDispatch } from './store/store';
-import NewsCard from './components/newsCard';
+import NewsCard from './components/NewsCard';
 import SearchBar from './components/Search';
 import SkeletonLoader from './components/Skeleton';
 

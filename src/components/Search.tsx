@@ -23,7 +23,6 @@ const SearchBar: React.FC = () => {
         placeholder="Search news..."
       />
       <button onClick={handleSearch}>Search</button>
-      <p style={{padding: '20px 0'}}>Showing results of <strong>{query}</strong></p>
     </div>
   );
 };
