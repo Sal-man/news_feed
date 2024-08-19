@@ -1,0 +1,134 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.araticles_list {
+  display: block;
+}
+.araticles_list h3 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 26px;
+}
+.articles_wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.articles_wrapper article {
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+}
+.articles_wrapper img {
+  width: 100%;
+  height: auto;
+  max-height: 140px;
+  object-fit: cover;
+}
+.articles_wrapper h2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.articles_wrapper p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skeleton_conntainer {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .skeleton_conntainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+
+
+.search_container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.search_container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* SkeletonLoader.css */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background-color: #343434;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 150px;
+  background-color: #242424;
+  border-radius: 8px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-title {
+  width: 80%;
+  height: 20px;
+  background-color: #242424;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-description {
+  width: 100%;
+  height: 60px;
+  background-color: #242424;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -150px 0;
+  }
+  100% {
+    background-position: 150px 0;
+  }
+}
